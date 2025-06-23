@@ -1,0 +1,36 @@
+/* All common css start */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+
+.container{
+    width: 1440px;
+}
+/* all common css end */
+
+.main_menu{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    gap: 50px;
+}
+.left .menu{
+  gap: 20px;
+}
+.right{
+    display: flex;
+}
+.left ul{
+    display:inline-block;
+}
