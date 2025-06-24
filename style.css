@@ -14,23 +14,65 @@ ul,li{
 
 .container{
     width: 1440px;
+    margin: 0 auto;
+}
+:root{
+    --color_white:#FFFFFF;
+    --color_green:#0057FF;
 }
 /* all common css end */
 
-.main_menu{
+
+.navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 55px;
+     position: relative;
 }
-.left{
+.navbar::after{
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: url("./image/Divider.png");
+  background-repeat: no-repeat;
+  background-size: covar;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+}
+.left_menu{
     display: flex;
-    gap: 50px;
+    gap: 30px;
+
 }
-.left .menu{
-  gap: 20px;
-}
-.right{
+.left_menu .menu{
     display: flex;
+    max-width: 370px;
+    justify-content: center;
+    gap: 30px;
 }
-.left ul{
-    display:inline-block;
+.left_menu .menu ul li a{
+    color:#191919;
+    font-size: 16px;
+}
+.right_menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.right_menu button{
+    border: transparent;
+    padding: 10px 20px;
+    border-radius: 1000px;
+}
+.right_menu .btn{
+    background:#F5F8FF ;
+    border:1px ;
+    color:var(--color_green)
+}
+.right_menu .btn_2{
+    background: #0057FF;
+    color: var(--color_white);
 }
