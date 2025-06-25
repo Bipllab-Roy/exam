@@ -17,8 +17,11 @@ ul,li{
     margin: 0 auto;
 }
 :root{
+    --font-family:'Helvetica Neue', sans-serif;
     --color_white:#FFFFFF;
     --color_green:#0057FF;
+    --color_black:#191919;
+    --color:#696969;
 }
 /* all common css end */
 
@@ -54,8 +57,10 @@ ul,li{
     gap: 30px;
 }
 .left_menu .menu ul li a{
+    font-family: var(--font-family);
+    font-weight: 400;
     color:#191919;
-    font-size: 16px;
+    font-size: 14px;
 }
 .right_menu{
     display: flex;
@@ -63,16 +68,103 @@ ul,li{
     gap: 30px;
 }
 .right_menu button{
+     font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
     border: transparent;
     padding: 10px 20px;
     border-radius: 1000px;
+
 }
 .right_menu .btn{
+   
     background:#F5F8FF ;
     border:1px ;
     color:var(--color_green)
+    
 }
 .right_menu .btn_2{
     background: #0057FF;
     color: var(--color_white);
 }
+
+/* ============
+navbar end
+============ */
+.main_header{
+    display: flex;
+     justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    margin-top: 15px;
+     padding: 10px 15px 10px 30px;
+     border-radius: 1000px;
+     border: 2px solid #CCCCCC;
+}
+.main_header .search h3{
+    color: var(--color);
+    position: relative;
+   
+}
+.main_header .search h3::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("./image/Icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    transform: translate(-20px, -3px);
+    bottom: 0;
+    left: 0;
+
+}
+.main_header .catagoris{
+    display: flex;
+    align-items: center;
+     gap: 50px;
+    
+}
+.catagoris button{
+    background: var(--color_black);
+    padding: 10px 15px;
+    border-radius: 1000px;
+    color: var(--color_white);
+    border: transparent;
+}
+
+.main_header .catagoris h5{
+    font-family: var(--font-family);
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+    color:var(--color_black)
+}
+/* header end */
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.filter_left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.filter_left .filter_btn{
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   padding: 10px 10px;
+}
+.creat{
+    padding: 3px 3px;
+}
+.col{
+padding: 3px 3px;
+}
+
+
+
+
