@@ -14,10 +14,12 @@ ul,li{
 body{
     width: 1440px;
     margin:0 auto;
+    
 }
 .container{
     width: 1392px;
     margin: 0 auto;
+   
 }
 :root{
     --font-family:'Helvetica Neue', sans-serif;
@@ -25,7 +27,9 @@ body{
     --color_green:#0057FF;
     --color_black:#191919;
     --color:#696969;
+  
 }
+
 /* all common css end */
 
 
@@ -94,12 +98,16 @@ body{
 /* ============
 navbar end
 ============ */
+
+header{
+    padding-top: 20px;
+}
+
 .main_header{
     display: flex;
      justify-content: space-between;
     height: 50px;
     align-items: center;
-    margin-top: 15px;
      padding: 10px 15px 10px 30px;
      border-radius: 1000px;
      border: 2px solid #CCCCCC;
@@ -203,16 +211,11 @@ header::after{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    padding-bottom: 20px;
     gap: 15px;
-}
-.design_img{
-    width: 333px;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
    .activity{
     display: flex;
-    width: 333px;
     justify-content: space-between;
    }
 .follow{
@@ -238,8 +241,89 @@ header::after{
     font-weight: 300;
     color: var(--color_black);
 }
+.multi_btn{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border: transparent;
+    background: none;
+    gap: 8px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color_black);
+}
+.multi_btn img{
+    transform: translateY(-12px);
+}
 
+/* ==============
+   design 1 end
+   =============== */
 
+.advertisement{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    background: #eeeaeaec;
+}
+.see_all_plans h3{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: var(--color_black);
+}
+.see_all_plans h6{
+     font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color_black);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 19px;
+}
+.see_all_plans .btn_s{
+    padding: 10px 20px;
+    background: var(--color_green);
+    color: var(--color_white);
+    border-radius: 1000px;
+    border: transparent;
+
+}
+.apps{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.see_all_plans{
+    max-width: 280px;
+}
+.description{
+    max-width: 199px;
+}
+.description h5{
+    font-family: var(--font-family);
+    font-weight: 400;
+   
+}
+.description p{
+    padding-top: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--color);
+}
+.cloud{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ==============
+   Advertisement end
+   ================= */
 
 
 
