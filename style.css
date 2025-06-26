@@ -11,9 +11,12 @@ a{
 ul,li{
     list-style: none;
 }
-
-.container{
+body{
     width: 1440px;
+    margin:0 auto;
+}
+.container{
+    width: 1392px;
     margin: 0 auto;
 }
 :root{
@@ -127,7 +130,7 @@ navbar end
 }
 .catagoris button{
     background: var(--color_black);
-    padding: 10px 15px;
+    padding: 8px 16px;
     border-radius: 1000px;
     color: var(--color_white);
     border: transparent;
@@ -137,7 +140,7 @@ navbar end
     font-family: var(--font-family);
     align-items: center;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     color:var(--color_black)
 }
 /* header end */
@@ -146,6 +149,7 @@ navbar end
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+    padding-bottom: 25px;
 }
 .filter_left{
     display: flex;
@@ -171,9 +175,69 @@ navbar end
     font-family: var(--font-family);
     font-size: 13px;
 }
+
+header{
+    position: relative;
+ 
+}
+header::after{
+     content: "";
+  width: 100%;
+  height: 3px;
+  background: url("./image/Divider.png");
+  background-repeat: no-repeat;
+  background-size: covar;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+
+
+
 /* ============
    Header end 
    =============*/
+.design_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    gap: 15px;
+}
+.design_img{
+    width: 333px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+   .activity{
+    display: flex;
+    width: 333px;
+    justify-content: space-between;
+   }
+.follow{
+    display: flex;
+    justify-content:center;
+    gap:  8px;
+    align-items: center;
+    
+}
+.vic_1{
+    display: flex;
+}
+.activity h3{
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+    color: var(--color_black);
+}
+.design h4{
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color_black);
+}
 
 
 
