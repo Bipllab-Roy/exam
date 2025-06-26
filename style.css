@@ -150,20 +150,32 @@ navbar end
 .filter_left{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 .filter_left .filter_btn{
+    font-family: var(--font-family);
+    font-size: 13px;
    display: flex;
    align-items: center;
    gap: 8px;
-   padding: 10px 10px;
+   padding: 1px 5px;
+   border: 1px solid #E8E8E8;
+   background: var(--color_white);
 }
-.creat{
-    padding: 3px 3px;
+.filter_right .filter_btn_r{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: transparent;
+    background: none;
+    font-family: var(--font-family);
+    font-size: 13px;
 }
-.col{
-padding: 3px 3px;
-}
+/* ============
+   Header end 
+   =============*/
+
+
 
 
 
