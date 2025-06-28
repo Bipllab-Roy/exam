@@ -140,10 +140,6 @@ header{
 }
 .main_header .search h3{
     color: var(--color);
-    padding-right: 400px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-right: 1px solid #696969;
     position: relative;
    
 }
