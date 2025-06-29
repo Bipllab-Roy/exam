@@ -162,21 +162,35 @@ header{
      gap: 50px;
     
 }
-.catagoris button{
-    background: var(--color_black);
-    padding: 8px 16px;
-    border-radius: 1000px;
-    color: var(--color_white);
-    border: transparent;
-}
 
-.main_header .catagoris h5{
+
+.catagoris ul{
+    display: flex;
+    gap: 40px;
+}
+.catagoris ul li{
     font-family: var(--font-family);
     align-items: center;
     font-size: 13px;
     font-weight: 500;
-    color:var(--color_black)
+    color: var(--color_black);
 }
+.catagoris ul li a{
+    font-family: var(--font-family);
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color_black);
+}
+.catagoris .btn{
+    background:var(--color_black) ;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    color:var(--color_white);
+    border: transparent;
+}
+
+
 /* header end */
 
 .filter{
